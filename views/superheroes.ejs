@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Heroes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 class="containerCards"> Superheroes </h1>
+    <div class="container">
+        <% superheroes.forEach(function(hero) { %>
+            <a href="/api/superheroes/<%= hero._id %>" class="cardLink">
+                <div class="cardHero">
+                    <div class="placeholderForImage">
+                        <img src="<%= hero.image %>" alt="<%= hero.heroName %>">
+                    </div>
+                    <div class="containerTitles">
+                        <div class="title">
+                            <%= hero.heroName %>
+                        </div>
+                        <div class="subTitle">
+                            <%= hero.firstName %> <br> <%= hero.lastName %>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        <% }); %>
+    </div>
+</body>
+</html>

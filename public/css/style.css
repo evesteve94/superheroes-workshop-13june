@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #acacac;
+    background: radial-gradient(circle, #FFFFFF 0%,#acacac 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+}
+
+.titlePage
+{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.containerCards
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 400px;
+    width: 300px;
+}
+
+.cardHero
+{
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(circle, #d7a409 0%,#000000 100%);
+    overflow: hidden;
+    margin: 5px;
+}
+
+.heroDetail{
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+
+.back-link {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #d7a409;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.placeholderForImage
+{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-description {
+    background: radial-gradient(circle, #ffd65e 0%,#000000 100%);
+    color: white;
+    padding: 0.5rem;
+    line-height: 1.5;
+    /* border-radius: 0.5rem; */
+}
+
+.containerTitles
+{
+    position: relative;
+    transform: rotate(25deg);
+    top: -76px;
+    left: -36px;
+    margin-bottom: 2px;
+}
+
+.title
+{
+    width: 320px;
+    height: 60px;
+    background: #00000080;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.subTitle
+{
+    width: 320px;
+    height: 40px;
+    background: #253DA1e6;
+    color: #ebfc2b;
+    font-size: 14px;
+    font-weight: 400;
+    /*display: flex;
+    align-items: center;*/
+    padding-left: 45px;
+}

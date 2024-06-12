@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= hero.heroName %> Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1><%= hero.heroName %> Details</h1>
+    <div class="heroDetail">
+        <img class="hero-img" src="<%= hero.image %>" alt="<%= hero.heroName %>">
+        <div class="hero-description">
+            <a class="back-link" href="/api/superheroes">Back</a>
+            <h2><%= hero.heroName %></h2>
+            <p>Real Name: <%= hero.firstName %> <%= hero.lastName %></p>
+            <p>Description: <%= hero.description %></p>
+        </div>
+
+    </div>
+</body>
+</html>
